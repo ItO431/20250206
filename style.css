@@ -1,0 +1,36 @@
+body{
+    background-color:rgb(218, 216, 209);    
+    min-height: 100vh;
+    margin: 0px;
+}
+
+.swiper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.swiper-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.swiper-slide{
+    position: absolute;
+    max-width: 350px;
+    height: auto;
+    opacity: 0; /* 初始為透明 */
+    transition: opacity 1s ease-in-out; /* 設置淡入淡出的過渡效果 */
+}
+.swiper-slide.active {
+    opacity: 1; /* 當圖片處於活動狀態時，顯示為不透明 */
+}
+#change {
+    opacity: 0.5;
+}
+#change:hover {
+    opacity: 1;
+}
+
